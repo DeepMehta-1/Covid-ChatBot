@@ -1,5 +1,7 @@
 numpy
-pandas
+Flask
+gunicorn==19.9.0
+tensorflow==1.15.0
+h5py==2.10.0
 Keras
-tensorflow
 nltk

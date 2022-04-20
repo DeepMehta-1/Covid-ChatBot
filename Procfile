@@ -1,1 +1,1 @@
-web: gunicorn chatgui:app
+web: gunicorn ChatBot:app --preload

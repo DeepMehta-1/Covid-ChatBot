@@ -9,7 +9,7 @@
         "My greetings",
         "Hey, how are you?",
         "What's up?",
-        "Are you doing well?"
+        "Are you doing well?",
         "Hola",
         "Hello",
         "Do you feel well?"
@@ -153,7 +153,7 @@
         "In the case of COVID-19 symptoms, what are the recommendations?",
         "What should someone with COVID-19 symptoms do?",
         "COVID-19 symptoms should be treated as soon as possible"
-    
+
       ],
       "responses": [
         "Treating COVID-19 If you’re concerned about your symptoms, consult your health care provider.If you think or know you had COVID-19 and had symptoms, the CDC recommends that it's OK to be around others after:At least five days have passed since your symptoms started. If you test positive and are an older adult or someone who is at high risk of getting very sick from COVID-19, treatment may be available."
