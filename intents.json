@@ -1,0 +1,333 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "covid",
+      "patterns": [
+        "What is a novel coronavirus?",
+        "What is COVID-19?",
+        "COVID"
+      ],
+      "responses": [
+        "A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold. A diagnosis with coronavirus 229E, NL63, OC43, or HKU1 is not the same as a COVID-19 diagnosis. Patients with COVID-19 will be evaluated and cared for differently than patients with common coronavirus diagnosis.",
+        "On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19,'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV.'. There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or new) coronavirus that has not previously been seen in humans. The name of this disease was selected following the World Health Organization (WHO) best practiceexternal icon for naming of new human infectious diseases."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "corona",
+      "patterns": [
+        "How can I help protect myself?"
+      ],
+      "responses": [
+        "COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "virus spread",
+      "patterns": [
+        "How does the virus spread?"
+      ],
+      "responses": [
+        "Visit the COVID-19 Prevention and Treatment page to learn about how to protect yourself from respiratory illnesses, like COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "community spread",
+      "patterns": [
+        "What is community spread?"
+      ],
+      "responses": [
+        "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Each health department determines community spread differently based on local conditions."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "soap and water or hand sanitizer",
+      "patterns": [
+        "Should I use soap and water or hand sanitizer to protect against COVID-19?"
+      ],
+      "responses": [
+        "Hand washing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available,use alcohol based hand sanitizer."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "recommendations",
+      "patterns": [
+        "What are the recommendations for someone who has symptoms of COVID-19"
+      ],
+      "responses": [
+        "If you are sick with COVID-19 or think you might have COVID-19 follow the steps below to care for yourself and to help protect other people in your home and community. Stay at home except to get medical care. Separate yourself from others. Monitor your symptoms. Wear a mask over your nose and mouth when around others. Cover your coughs and sneezes. Wash your hands often. Clean high-touch surfaces every day. Avoid sharing personal household items."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "symptoms and complications",
+      "patterns": [
+        "What are the symptoms and complications that COVID-19 can cause?"
+      ],
+      "responses": [
+        "People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "seek emergency care",
+      "patterns": [
+        "When should I seek emergency care if I have COVID-19?"
+      ],
+      "responses": [
+        "Look for emergency warning signs for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately Trouble breathing Persistent pain or pressure in the chest New confusion Inability to wake or stay awake Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "contact tracing",
+      "patterns": [
+        "What is contact tracing?"
+      ],
+      "responses": [
+        "Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "close contact",
+      "patterns": [
+        "Who is considered a close contact of someone with COVID-19?"
+      ],
+      "responses": [
+        "For COVID-19, a close contact is anyone who was within 6 feet of an infected person for a total of 15 minutes or more over a 24-hour period (for example, three individual 5-minute exposures for a total of 15 minutes). An infected person can spread COVID-19 starting from 2 days before they have any symptoms (or, if they are asymptomatic, 2 days before their specimen that tested positive was collected), until they meet the criteria for discontinuing home isolation."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
+        "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "adverse_drug",
+      "patterns": [
+        "How to check Adverse drug reaction?",
+        "Open adverse drugs module",
+        "Give me a list of drugs causing adverse behavior",
+        "List all drugs suitable for patient with adverse reaction",
+        "Which drugs dont have adverse reaction?"
+      ],
+      "responses": [
+        "Navigating to Adverse drug reaction module"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Open blood pressure module",
+        "Task related to blood pressure",
+        "Blood pressure data entry",
+        "I want to log blood pressure results",
+        "Blood pressure data management"
+      ],
+      "responses": [
+        "Navigating to Blood Pressure module"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "blood_pressure_search",
+      "patterns": [
+        "I want to search for blood pressure result history",
+        "Blood pressure for patient",
+        "Load patient blood pressure result",
+        "Show blood pressure results for patient",
+        "Find blood pressure results by ID"
+      ],
+      "responses": [
+        "Please provide Patient ID",
+        "Patient ID?"
+      ],
+      "context": [
+        "search_blood_pressure_by_patient_id"
+      ]
+    },
+    {
+      "tag": "search_blood_pressure_by_patient_id",
+      "patterns": [],
+      "responses": [
+        "Loading Blood pressure result for Patient"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [
+        "Find me a pharmacy",
+        "Find pharmacy",
+        "List of pharmacies nearby",
+        "Locate pharmacy",
+        "Search pharmacy"
+      ],
+      "responses": [
+        "Please provide pharmacy name"
+      ],
+      "context": [
+        "search_pharmacy_by_name"
+      ]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [],
+      "responses": [
+        "Loading pharmacy details"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "hospital_search",
+      "patterns": [
+        "Lookup for hospital",
+        "Searching for hospital to transfer patient",
+        "I want to search hospital data",
+        "Hospital lookup for patient",
+        "Looking up hospital details"
+      ],
+      "responses": [
+        "Please provide hospital name or location"
+      ],
+      "context": [
+        "search_hospital_by_params"
+      ]
+    },
+    {
+      "tag": "search_hospital_by_params",
+      "patterns": [],
+      "responses": [
+        "Please provide hospital type"
+      ],
+      "context": [
+        "search_hospital_by_type"
+      ]
+    },
+    {
+      "tag": "search_hospital_by_type",
+      "patterns": [],
+      "responses": [
+        "Loading hospital details"
+      ],
+      "context": [
+        ""
+      ]
+    }
+  ]
+}
