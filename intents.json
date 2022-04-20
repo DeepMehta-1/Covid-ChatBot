@@ -1,56 +1,65 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "Warmest regards",
       "patterns": [
         "Hi there",
-        "How are you",
-        "Is anyone there?",
-        "Hey",
+        "I greet you",
+        "Thank you",
+        "My greetings",
+        "Hey, how are you?",
+        "What's up?",
+        "Are you doing well?"
         "Hola",
         "Hello",
-        "Good day"
+        "Do you feel well?"
       ],
       "responses": [
-        "Hello, how can I help you?",
-        "This is Covid-10 Chat Bot. How can I hel you?",
-        "Hi, how can I help?"
+        "Could you please let me know how I can help you?",
+        "Greetings, how can I be of assistance to you",
+        "The Covid Chat Bot can be found here.If you need assistance, please let me know.?",
+        "Hey, how may I help you?"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "goodbye",
+      "tag": "Until next time",
       "patterns": [
-        "Bye",
+        "Thanks for visiting",
+        "Until next time",
         "See you later",
-        "Goodbye",
-        "Nice chatting to you, bye"
+        "Best regards",
+        "Bye-bye"
       ],
       "responses": [
-        "See you!",
+        "Nice hearing from you, have a nice day!",
+        "I look forward to seeing you",
         "Have a nice day",
-        "Bye! Come back again soon.",
-        "Bye!"
+        "Looking forward to seeing you.",
+        "Bye!",
+        "Hello, see you"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "thanks",
+      "tag": "Thank you",
       "patterns": [
-        "Thanks",
-        "Thank you",
-        "That's helpful",
+        "Regards",
+        "Thanks a lot",
+        "Thank a ton",
+        "I appreciate it",
         "Awesome, thanks",
-        "Thanks for helping me"
+        "Sincerely, thank you"
       ],
       "responses": [
-        "Happy to help!",
-        "Any time!",
-        "My pleasure!"
+        "I'm glad to help!",
+        "Feel free to contact us anytime",
+        "That's my pleasure!",
+        "You're welcome"
       ],
       "context": [
         ""
@@ -59,14 +68,16 @@
     {
       "tag": "covid",
       "patterns": [
-        "What is a novel coronavirus?",
+        "A novel Coronavirus?",
+        "The term 'novel coronavirus'",
+        "Defining a novel coronavirus",
         "What is COVID-19?",
         "COVID",
         "Coronavirus"
       ],
       "responses": [
-        "A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold. A diagnosis with coronavirus 229E, NL63, OC43, or HKU1 is not the same as a COVID-19 diagnosis. Patients with COVID-19 will be evaluated and cared for differently than patients with common coronavirus diagnosis.",
-        "On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19,'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV.'. There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or new) coronavirus that has not previously been seen in humans. The name of this disease was selected following the World Health Organization (WHO) best practiceexternal icon for naming of new human infectious diseases."
+        "COVID-19 is the disease caused by SARS-CoV-2, the coronavirus that emerged in December 2019. COVID-19 can be severe, and has caused millions of deaths around the world as well as lasting health problems in some who have survived the illness. The coronavirus can be spread from person to person. It is diagnosed with a test. The best way to protect yourself is to get vaccinated and boosted when you are eligible, follow testing guidelines, wear a mask, wash your hands and practice physical distancing.",
+        "Symptoms show up in people within two to 14 days of exposure to the virus. A person infected with the coronavirus is contagious to others for up to two days before symptoms appear, and they remain contagious to others for 10 to 20 days, depending upon their immune system and the severity of their illness."
       ],
       "context": [
         ""
@@ -75,11 +86,14 @@
     {
       "tag": "corona",
       "patterns": [
+        "What can I do to protect myself",
+        "The best way I can protect myself",
         "How can I help protect myself?",
         "Prevention",
         "Precautions"
       ],
       "responses": [
+        "Here are some tips on how I can help protect myself",
         "To prevent the spread of COVID-19:\nMaintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.\nWear a mask in public, especially indoors or when physical distancing is not possible.\nChoose open, well-ventilated spaces over closed ones. Open a window if indoors.\nClean your hands often. Use soap and water, or an alcohol-based hand rub.\nGet vaccinated when it’s your turn. Follow local guidance about vaccination.\nCover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\nStay home if you feel unwell."
       ],
       "context": [
@@ -87,164 +101,185 @@
       ]
     },
     {
-      "tag": "virus spread",
+      "tag": "Spread of viruses",
       "patterns": [
+        "In what way does the virus spread",
+        "What are the symptoms of the virus",
+        "Virus spread",
+        "The method by which the virus spreads",
         "How does the virus spread?"
       ],
       "responses": [
-        "COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth."
+        "Droplets or aerosols. This is the most common transmission. When an infected person coughs, sneezes, or talks, droplets or tiny particles called aerosols carry the virus into the air from their nose or mouth. Anyone who is within 6 feet of that person can breathe it into their lungs.Airborne transmission.Surface transmission. A less common method is when you touch surfaces that someone who has the virus has coughed or sneezed on.Fecal-oral. Studies also suggest that virus particles can be found in infected people's poop."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "community spread",
+      "tag": "The community spreads",
       "patterns": [
-        "What is community spread?"
+        "How does community spread?",
+        "Community spread - what is it?",
+        "Describe the concept of community spread",
+        "What does community spread mean?"
       ],
       "responses": [
-        "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Each health department determines community spread differently based on local conditions."
+        "COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization. the spread of a contagious disease to individuals in a particular geographic location who have no known contact with other infected individuals or who have not recently traveled to an area where thedisease has any documented cases."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "soap and water or hand sanitizer",
+      "tag": "Use soap and water or hand sanitizerr",
       "patterns": [
-        "Should I use soap and water or hand sanitizer to protect against COVID-19?"
+        "Do I need to use soap and water or hand sanitizer to protect myself from COVID-19",
+        "Can I protect against COVID-19 with soap and water or hand sanitizer",
+        "Is it best to use soap and water or hand sanitizer to protect myself from COVID-19",
+        "When protecting against COVID-19, should I use soap and water or hand sanitizer"
       ],
       "responses": [
-        "Hand washing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available,use alcohol based hand sanitizer."
+        "Hand hygiene means washing your hands often with soap and water for at least 20 seconds. If soap and water aren't available, use a hand sanitizer containing at least 60% alcohol."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "recommendations",
+      "tag": "Advisory",
       "patterns": [
-        "What are the recommendations for someone who has symptoms of COVID-19"
+        "How should someone who has symptoms of COVID-19 proceed?",
+        "In the case of COVID-19 symptoms, what are the recommendations?",
+        "What should someone with COVID-19 symptoms do?",
+        "COVID-19 symptoms should be treated as soon as possible"
+    
       ],
       "responses": [
-        "If you are sick with COVID-19 or think you might have COVID-19 follow the steps below to care for yourself and to help protect other people in your home and community. Stay at home except to get medical care. Separate yourself from others. Monitor your symptoms. Wear a mask over your nose and mouth when around others. Cover your coughs and sneezes. Wash your hands often. Clean high-touch surfaces every day. Avoid sharing personal household items."
+        "Treating COVID-19 If you’re concerned about your symptoms, consult your health care provider.If you think or know you had COVID-19 and had symptoms, the CDC recommends that it's OK to be around others after:At least five days have passed since your symptoms started. If you test positive and are an older adult or someone who is at high risk of getting very sick from COVID-19, treatment may be available."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "symptoms and complications",
+      "tag": "Complicating factors and symptoms",
       "patterns": [
-        "What are the symptoms and complications that COVID-19 can cause?"
+        "COVID-19 symptoms and complications",
+        "COVID-19 can cause a number of symptoms and complications",
+        "COVID-19 can cause the following symptoms and complications",
+        "What are the symptoms and complications of COVID-19?"
       ],
       "responses": [
-        "People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19."
+        "COVID-19 is the disease caused by a SARS-CoV-2 infection. People who have COVID-19 can experience a range of symptoms and illness intensity from mild to severe. Or they may have no symptoms at all. The most common symptoms include fever or chills, cough, shortness of breath, fatigue, body aches, headache, sore throat."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "seek emergency care",
+      "tag": "Contact an emergency room",
       "patterns": [
-        "When should I seek emergency care if I have COVID-19?"
+        "If I have COVID-19, when should I seek emergency care",
+        "If I have COVID-19, what should I do?"
       ],
       "responses": [
-        "Look for emergency warning signs for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately Trouble breathing Persistent pain or pressure in the chest New confusion Inability to wake or stay awake Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone."
+        "Look for emergency signs: Chest pain or trouble breathing, New confusion or excessive drowsiness, Temperature reaches 103°F or higher at any time, A fever of any temperature >99.6°F that lasts more than three days."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "contact tracing",
+      "tag": "Identifying contacts",
       "patterns": [
-        "What is contact tracing?"
+        "The contact tracing process?",
+        "The contact tracing process"
       ],
       "responses": [
-        "Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases."
+        "The action or process of identifying individuals who have been in the proximity of a person diagnosed with an infectious disease, in order to isolate, test, or treat them:"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "close contact",
+      "tag": "Maintain contact",
       "patterns": [
-        "Who is considered a close contact of someone with COVID-19?"
+        "Those who are considered close contacts of someone with COVID-19",
+        "Those who are considered close contacts of someone with COVID-19",
+        "Who is considered a close contact of someone who has COVID-19?"
       ],
       "responses": [
-        "For COVID-19, a close contact is anyone who was within 6 feet of an infected person for a total of 15 minutes or more over a 24-hour period (for example, three individual 5-minute exposures for a total of 15 minutes). An infected person can spread COVID-19 starting from 2 days before they have any symptoms (or, if they are asymptomatic, 2 days before their specimen that tested positive was collected), until they meet the criteria for discontinuing home isolation."
+        "If you spent time with someone with COVID-19 and you were both wearing masks, you are not a close contact. Close contacts may include: • Friends and family."
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "noanswer",
+      "tag": "no response",
       "patterns": [],
       "responses": [
-        "Sorry, can't understand you",
-        "Please give me more info",
-        "Not sure I understand"
+        "I don't know!",
+        "Answer not available",
+        "Answer not available"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "options",
+      "tag": "Choices",
       "patterns": [
-        "How you could help me?",
-        "What you can do?",
-        "What help you provide?",
-        "How you can be helpful?",
-        "What support is offered"
+        "Please let me know how you can help?",
+        "I need your help",
+        "Would you be able to help me?",
+        "Would you be able to help me?",
+        "What is offered in terms of support"
       ],
       "responses": [
-        "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
-        "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+        "You can obtain information on adverse drug reactions, blood pressure tracking, hospitals, and pharmacies from me",
+        "Assistance with adverse drug reactions, blood pressure, hospitals, and pharmacies"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "adverse_drug",
+      "tag": "Unwanted_drug",
       "patterns": [
-        "How to check Adverse drug reaction?",
+        "Adverse drug reactions: How to check for them?",
         "Open adverse drugs module",
-        "Give me a list of drugs causing adverse behavior",
-        "List all drugs suitable for patient with adverse reaction",
-        "Which drugs dont have adverse reaction?"
+        "I want a list of drugs which is causing adverse behavior",
+        "Name the drug which dont have adverse side-effects?"
       ],
       "responses": [
-        "Navigating to Adverse drug reaction module"
+        "Here! are the options for drugs required for your help"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "blood_pressure",
+      "tag": "blood pressure",
       "patterns": [
-        "Open blood pressure module",
-        "Task related to blood pressure",
-        "Blood pressure data entry",
-        "I want to log blood pressure results",
-        "Blood pressure data management"
+        "Checking blood pressure",
+        "Opening of blood pressure documents",
+        "Actions in terms of blood pressure",
+        "Users data for blood pressure",
+        "Blood pressure reports",
+        "data management team for blood pressure"
       ],
       "responses": [
-        "Navigating to Blood Pressure module"
+        "Opening of blood pressure documents"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "blood_pressure_search",
+      "tag": "Asking basic blood pressure measurement",
       "patterns": [
         "I want to search for blood pressure result history",
         "Blood pressure for patient",
@@ -254,79 +289,80 @@
       ],
       "responses": [
         "Please provide Patient ID",
+        "Aadhar number",
+        "Passport number",
         "Patient ID?"
       ],
       "context": [
-        "search_blood_pressure_by_patient_id"
+        "search bp history by patient id"
       ]
     },
     {
-      "tag": "search_blood_pressure_by_patient_id",
+      "tag": "search bp history by patient id",
       "patterns": [],
       "responses": [
-        "Loading Blood pressure result for Patient"
+        "Results for blood pressure of respective patient"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "pharmacy_search",
+      "tag": "clinic_search",
       "patterns": [
-        "Find me a pharmacy",
-        "Find pharmacy",
-        "List of pharmacies nearby",
-        "Locate pharmacy",
-        "Search pharmacy"
+        "Find me a nearest clinic",
+        "Find medical",
+        "List of medical nearby",
+        "Locate clinic",
+        "Search clinic"
       ],
       "responses": [
-        "Please provide pharmacy name"
+        "Please provide clinic name"
       ],
       "context": [
-        "search_pharmacy_by_name"
+        "find_clinic_name"
       ]
     },
     {
-      "tag": "search_pharmacy_by_name",
+      "tag": "find_clinic_name",
       "patterns": [],
       "responses": [
-        "Loading pharmacy details"
+        "Loading clinic details"
       ],
       "context": [
         ""
       ]
     },
     {
-      "tag": "hospital_search",
+      "tag": "find_hospital",
       "patterns": [
-        "Lookup for hospital",
-        "Searching for hospital to transfer patient",
-        "I want to search hospital data",
-        "Hospital lookup for patient",
-        "Looking up hospital details"
+        "Looking for local hospital",
+        "Finding nearest hospital",
+        "Checking hospital records",
+        "looking for hospital details"
       ],
       "responses": [
-        "Please provide hospital name or location"
+        "Could you please give name and location for hospital?"
       ],
       "context": [
-        "search_hospital_by_params"
+        "find_hospital_using_type"
       ]
     },
     {
-      "tag": "search_hospital_by_params",
+      "tag": "find_hospital_using_type",
       "patterns": [],
       "responses": [
-        "Please provide hospital type"
+        "Could you please provide hospital type?"
       ],
       "context": [
-        "search_hospital_by_type"
+        "search_hospital_by_param"
       ]
     },
     {
-      "tag": "search_hospital_by_type",
+      "tag": "look_hospital_by_type",
       "patterns": [],
       "responses": [
-        "Loading hospital details"
+        "Loading of local hospital details"
       ],
       "context": [
         ""
