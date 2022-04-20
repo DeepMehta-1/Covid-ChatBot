@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fish type prediction web app</title>
+    <!--  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>-->
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+
+    <script>
+        function addWord() {
+            document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + {{ str_msg }};
+        }
+
+    </script>
+</head>
+
+<body>
+<div class="login">
+    <h1>Fish Prediction</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('send')}}" method="post">
+        <input type="text" name="name_input" placeholder="Enter Message" required="required"/>
+        <!--        <input type="text" name="Length1" maxlength="7" placeholder="Vertical length(cm)" required="required" />-->
+        <!--		<input type="text" name="Length2" maxlength="7" placeholder="Diagonal length(cm)" required="required" />-->
+        <!--		<input type="text" name="Length3" maxlength="7" placeholder="Cross length(cm)" required="required" />-->
+        <!--		<input type="text" name="Height" maxlength="7" placeholder="Height(cm)" required="required" />-->
+        <!--		<input type="text" name="Width" maxlength="7" placeholder="Diagonal width(cm)" required="required" />-->
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Send</button>
+    </form>
+
+    <br>
+    <br>
+
+    <div id="text" class="text">
+            {{ str_msg }}
+
+        <!-- Write word here as many times as the button is pressed -->
+    </div>
+
+<!--    {{ str_msg }}-->
+
+</div>
+
+
+</body>
+</html>

@@ -12,9 +12,9 @@
         "Good day"
       ],
       "responses": [
-        "Hello, thanks for asking",
-        "Good to see you again",
-        "Hi there, how can I help?"
+        "Hello, how can I help you?",
+        "This is Covid-10 Chat Bot. How can I hel you?",
+        "Hi, how can I help?"
       ],
       "context": [
         ""
@@ -26,13 +26,13 @@
         "Bye",
         "See you later",
         "Goodbye",
-        "Nice chatting to you, bye",
-        "Till next time"
+        "Nice chatting to you, bye"
       ],
       "responses": [
         "See you!",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Come back again soon.",
+        "Bye!"
       ],
       "context": [
         ""
@@ -50,7 +50,7 @@
       "responses": [
         "Happy to help!",
         "Any time!",
-        "My pleasure"
+        "My pleasure!"
       ],
       "context": [
         ""
@@ -61,7 +61,8 @@
       "patterns": [
         "What is a novel coronavirus?",
         "What is COVID-19?",
-        "COVID"
+        "COVID",
+        "Coronavirus"
       ],
       "responses": [
         "A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold. A diagnosis with coronavirus 229E, NL63, OC43, or HKU1 is not the same as a COVID-19 diagnosis. Patients with COVID-19 will be evaluated and cared for differently than patients with common coronavirus diagnosis.",
@@ -74,10 +75,12 @@
     {
       "tag": "corona",
       "patterns": [
-        "How can I help protect myself?"
+        "How can I help protect myself?",
+        "Prevention",
+        "Precautions"
       ],
       "responses": [
-        "COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth."
+        "To prevent the spread of COVID-19:\nMaintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.\nWear a mask in public, especially indoors or when physical distancing is not possible.\nChoose open, well-ventilated spaces over closed ones. Open a window if indoors.\nClean your hands often. Use soap and water, or an alcohol-based hand rub.\nGet vaccinated when it’s your turn. Follow local guidance about vaccination.\nCover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\nStay home if you feel unwell."
       ],
       "context": [
         ""
@@ -89,7 +92,7 @@
         "How does the virus spread?"
       ],
       "responses": [
-        "Visit the COVID-19 Prevention and Treatment page to learn about how to protect yourself from respiratory illnesses, like COVID-19."
+        "COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth."
       ],
       "context": [
         ""

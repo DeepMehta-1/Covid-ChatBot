@@ -5,11 +5,21 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-
-from tensorflow.keras.models import load_model
-model = load_model('covid_chatbot_model.h5')
 import json
 import random
+from tensorflow.keras.models import load_model
+from flask import Flask, request, jsonify, render_template
+
+# Create application
+app = Flask(__name__)
+
+# Bind home function to URL
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+model = load_model('covid_chatbot_model.h5')
+
 intents = json.loads(open('intents.json').read())
 words_dat = pickle.load(open('words_mod.pkl','rb'))
 classes_dat = pickle.load(open('classes_mod.pkl','rb'))
@@ -68,33 +78,41 @@ def chatbot_response(msg):
 
 #Creating GUI with tkinter
 import tkinter
-from tkinter import *
+# from tkinter import *
 
-
+# Bind predict function to URL
+@app.route('/send', methods =['POST'])
 def send():
-    msg = EntryBox.get("1.0",'end-1c').strip()
-    EntryBox.delete("0.0",END)
+    msg = str(request.form['name_input'])
 
+    # msg = EntryBox.get("1.0",'end-1c').strip()
+    # EntryBox.delete("0.0",END)
+
+    print("check msg" + msg)
     if msg != '':
-        ChatLog.config(state=NORMAL)
-        ChatLog.insert(END, "You: " + msg + '\n\n')
-        ChatLog.config(foreground="#32CD32", font=("Arial", 12)) 
-    
-        res = chatbot_response(msg)
-        ChatLog.insert(END, "CORONA-Bot: " + res + '\n\n')
-        ChatLog.config(foreground="#3BCD32", font=("Courier", 12))
-            
-        ChatLog.config(state=DISABLED)
-        ChatLog.yview(END)
- 
+        # ChatLog.config(state=NORMAL)
+        # ChatLog.insert(END, "You: " + msg + '\n\n')
+        # ChatLog.config(foreground="#32CD32", font=("Arial", 12))
 
+        res = chatbot_response(msg)
+
+        print("response " + res)
+        return render_template("index.html", str_msg='ChatBot:  {}'.format(res))
+
+        # ChatLog.insert(END, "CORONA-Bot: " + res + '\n\n')
+        # ChatLog.config(foreground="#3BCD32", font=("Courier", 12))
+        #
+        # ChatLog.config(state=DISABLED)
+        # ChatLog.yview(END)
+ 
+'''
 base = Tk()
 base.title("COVID-19 ChatBot")
 base.geometry("800x600")
 base.resizable(width=FALSE, height=FALSE)
 
 #Create Chat window
-ChatLog = Text(base, bd=0, bg="white", height="15", width="90", font="Calibri",)
+ChatLog = Text(base, bd=0, bg="black", height="15", width="90", font="Calibri",)
 
 ChatLog.config(state=DISABLED)
 
@@ -103,19 +121,23 @@ scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="Arrow")
 ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
-SendButton = Button(base, font=("Verdana",12,'bold'), text="Ask", width="12", height=5,
-                    bd=0, bg="#FF5733", activebackground="#3c9d9b",fg='#ffffff',
-                    command= send )
+SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width=12, height=5,
+                    bd=0, bg="#008080", activebackground="#30d5c8",fg='#ffffff',
+                    command= send)
 
 #Create the box to enter message
-EntryBox = Text(base, bd=0, bg="white",width="40", height="12", font="Arial")
+EntryBox = Text(base, bd=0, bg="white",width=40, height=12, font="Arial")
 #EntryBox.bind("<Return>", send)
 
 
 #Place all components on the screen
 scrollbar.place(x=776,y=10, height=586)
 ChatLog.place(x=6,y=6, height=486, width=750)
-EntryBox.place(x=128, y=501, height=90, width=627)
-SendButton.place(x=6, y=501, height=90)
+EntryBox.place(x=128, y=501, height=50, width=627)
+SendButton.place(x=6, y=501, height=50)
 
 base.mainloop()
+'''
+if __name__ == '__main__':
+#Run the application
+    app.run()
